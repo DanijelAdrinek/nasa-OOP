@@ -19,10 +19,15 @@
             <label for="password">Password:</label>
             <div id="passwordError" class="error"></div>
             <input type="password" name="password" id="password">
-            <input type="submit" value="Submit" id="submit" onclick="displayUsernameAndPassword()">
+            <input type="submit" value="Submit" id="submit" onclick="validateFormData()">
         </div>
 
-    <script src="./javascript/script.js"></script>
-    <script src="./javascript/login.js"></script>
+        <script src="./javascript/login/variables.js"></script>
+        <script src="./javascript/login/database-manager.js"></script>
+        <script src="./javascript/login/form-handler.js"></script>
+        <script src="./javascript/login/login-error-handler.js"></script>
+        <script src="./javascript/login/login-class.js"></script>
+        <script src="./javascript/login/form-validator.js"></script>
+        <script src="./javascript/login/login.js"></script>
 </body>
 </html>
