@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/variables.css">
+    <link rel="stylesheet" href="./css/loading.css">
+    <link rel="stylesheet" href="./css/content.css">
+    <script src="https://kit.fontawesome.com/eb94c12959.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Loading -->
+    <div id="loadingContainerParent">
+        <div id="loadingContainer">
+            <div id="loading"></div>
+        </div>
+    </div>
+
+    <a id="goToTop" href="#navbar">
+        ↑
+    </a>
+
+    <!-- Content -->
+    <div id="contentContainer">
+        <!-- Nav -->
+        <nav id="navbar">
+            <a href="index.html">Re-login</a>
+            <a href="#" id="favorites"onclick="toggleDisplayFavorites();">Favorites</a>
+            <a href="#" onclick="addNewDataToPostData()">Load More</a>
+        </nav>
+        <!-- End Nav -->
+
+        <div id="favorites" style="display: none">
+
+        </div>
+
+        <div id="content">
+            <!-- just a placeholder to show off before loading actual data -->
+            <div class="card">
+                <img class="nasaContentImg" src="./assets/marscandor_themis_a.jpg" alt="mars">
+                <div class="textContent">
+                    <h1>Title of image</h1>
+                    Alnitak, Alnilam, and Mintaka, are the bright bluish stars from east to west (lower right to upper left) along the diagonal in this gorgeous cosmic vista. Otherwise known as the Belt of Orion, these three blue supergiant stars are hotter and much more massive than the Sun. They lie about 1,500 light-years away, born of Orion's well-studied interstellar clouds. In fact, clouds of gas and dust adrift in this region have intriguing and some surprisingly familiar shapes, including the dark Horsehead Nebula and Flame Nebula near Alnitak at the lower right. The famous Orion Nebula itself is off the right edge of this colorful star field. The well-framed, wide-field telescopic image spans about 4 degrees on the sky.  Watch: The Geminid Meteor Shower
+                    <!-- add to favorites and delete -->
+                    <div class="iconsContainer">
+                        <div class="addToFavoritesBtn"><i class="fa-regular fa-heart favoritesIcon" onclick="onFavoritesIconClick(this)"></i></div>
+                        <button class="deletePost">Delete Post</button>
+                    </div>
+                </div>
+
+            </div>
+            
+        </div>
+    </div>
+    <script src="./javascript/script.js"></script>
+    <script src="./javascript/content.js"></script>
+</body>
+</html>

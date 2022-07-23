@@ -1,0 +1,125 @@
+/* Mobile First */
+
+#navbar {
+    position: relative;
+    background-color: black;
+    max-width: 100vw;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 22px;
+}
+
+#navbar > a {
+    text-decoration: none;
+    font-size: 22px;
+    color: antiquewhite;
+    font-family: sans-serif;
+    outline: none;
+}
+
+#navbar > a:hover {
+    color: rgba(250, 235, 215, 0.8);
+}
+
+#goToTop {
+    position: fixed;
+    width: 65px;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    cursor: pointer;
+    background-color: rgb(90, 90, 90);
+    border-radius: 10px;
+    top: var(--toTopButtonOffset);
+    left: var(--toTopButtonOffset);
+    transform: translate(-100%, -100%);
+    text-decoration: none;
+    color: white;
+}
+
+#contentContainer {
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+#content {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.card {
+    margin: 35px 0;
+    width: 90%;
+    background-color: white;
+    overflow: hidden;
+    border-radius: 3px;
+}
+
+.nasaContentImg {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.textContent{
+    box-sizing: border-box;
+    padding: 25px;
+    font-size: 15px;
+    font-family: sans-serif;
+    line-break: 10px;
+}
+
+.iconsContainer {
+    width: 100%;
+    margin-top: 25px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.favoritesIcon {
+    color: red;
+    font-size: 50px;
+}
+
+.favoritesIcon:hover {
+    cursor: pointer;
+}
+
+.deletePost {
+    background-color: red;
+    padding: 10px 20px;
+    color: white;
+    font-size: 25px;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+
+.deletePost:hover {
+    background-color: #dd2626;
+    cursor: pointer;
+}
+
+
+.deletePost:active {
+    box-shadow: 0 0 5px inset;
+}
+
+@media screen and (min-width: 700px) {
+    .card {
+        width: 60%;
+        box-shadow: 0px 0px 10px;
+    }
+    #goToTop {
+        width: 75px;
+        height: 75px;
+    }
+}

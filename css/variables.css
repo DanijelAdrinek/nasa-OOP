@@ -1,0 +1,4 @@
+:root {
+    --primary-color: rgba(255, 228, 196, 0.7);
+    --toTopButtonOffset: calc(100% - 20px);
+}

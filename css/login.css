@@ -1,0 +1,75 @@
+/* MOBILE FIRST */
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--primary-color);
+}
+
+#loginFormParent {
+    width: calc(100vw - 20px);
+    max-width: 500px;
+    background-color: white;
+    box-sizing: border-box;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+label {
+    font-family: sans-serif;
+    font-size: 18px;
+}
+
+input#username, input#password {
+    margin: 10px 0;
+    box-sizing: border-box;
+    width: 100%;
+    outline: none;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+input#submit {
+    color: white;
+    background-color: #007bff;
+    font-size: 20px;
+    border-radius: 4px;
+    padding: 8px 15px;
+    border: 1px solid black;
+    margin: auto;
+    margin-top: 10px;
+    display: block;
+    transition: 0.2s;
+}
+
+input#submit:hover {
+    cursor: pointer;
+    background-color: #0062ff;
+}
+
+#nasaImg {
+    display: block;
+    max-width: 300px;
+    width: 100%;
+    max-height: 150px;
+    margin: auto;
+}
+
+.error{
+    width: 100%;
+    background-color: red;
+    padding: 11px 25px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    color: white;
+    font-size: 22px;
+    font-family: sans-serif;
+    font-weight: bold;
+    display: none;
+}
