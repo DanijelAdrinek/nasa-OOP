@@ -16,21 +16,22 @@
             <p>To log in enter either User or Admin in username, and pass is: 123 </p>
 
         </div>
-            <label for="username">Username:</label>
-            <div id="usernameError" class="error"></div>
-            <input type="text" name="username" id="username">
-            <label for="password">Password:</label>
-            <div id="passwordError" class="error"></div>
-            <input type="password" name="password" id="password">
-            <input type="submit" value="Submit" id="submit" onclick="validateFormData()">
+            <form id="loginForm">
+                <div id="usernameField">
+                    <label for="username">Username:</label>
+                    <div id="usernameError" class="error hidden"></div>
+                    <input type="text" name="username" id="username">
+                </div>
+                <div id="passwordField">
+                    <label for="password">Password:</label>
+                    <div id="passwordError" class="error hidden"></div>
+                    <input type="password" name="password" id="password">
+                </div>
+                <input type="submit" value="Submit" id="submit">
+            </form>
         </div>
 
-        <script src="./javascript/login/variables.js"></script>
-        <script src="./javascript/login/database-manager.js"></script>
-        <script src="./javascript/login/form-handler.js"></script>
-        <script src="./javascript/login/login-error-handler.js"></script>
-        <script src="./javascript/login/login-class.js"></script>
-        <script src="./javascript/login/form-validator.js"></script>
-        <script src="./javascript/login/login.js"></script>
+        <script src="./javascript/mock/users.js"></script>
+        <script type="module" src="./javascript/views/loginView.js"></script>
 </body>
 </html>

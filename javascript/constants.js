@@ -1,0 +1,4 @@
+const NASA_API_KEY = 'api_key=VGvReHv4hFXCJodYUjJFiAxPR3qamK5kWiVf4OdX';
+const NASA_GET_ALL_COUNT = 10;
+
+export { NASA_API_KEY, NASA_GET_ALL_COUNT };
